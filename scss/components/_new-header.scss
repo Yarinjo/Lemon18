@@ -9,6 +9,25 @@
             display: flex;
             align-items: flex-end;
             gap: 60rem;
+            @include mobile {
+                position: fixed;
+                width: 70%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background: aqua;
+                opacity: 88%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transform: translateX(-120%);
+                transition: 0.2s all ease-in-out;
+                z-index: 1000;
+                color: pink;
+                text-align: center;
+    
+    
+            }
 		}
 
 		&__nav-links {
@@ -17,9 +36,7 @@
             font-size: 14px;
             color: #f9fafb; 
             border-radius: 5px;
-            @include mobile {
-                display: none;
-            }
+
 		}
 }
 .actual-link {
@@ -30,3 +47,24 @@
     text-align: end;
 
 }
+
+.menu {
+    display: none;
+    @include mobile {
+        display: block;
+    }
+}
+.is-active {
+    transform: translateX(0);
+  }
+
+  .close {
+    display: none;
+    @include mobile {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 90%;
+        color: black;
+    }
+  }
