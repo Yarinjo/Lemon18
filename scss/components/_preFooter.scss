@@ -1,0 +1,109 @@
+.preFooter {
+display: flex;
+margin-inline: auto;
+align-items: center;
+justify-content: center;
+
+
+@include tablet {
+    flex-direction: column;
+}
+
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include tablet {
+            flex-direction: row;
+            margin-inline: auto;
+            border-bottom: 1px solid aqua;
+        }
+        @include mobile {
+            gap: 10px;
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    &__block-links {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 222%;
+        letter-spacing: 0.01em;
+        color: rgba(255, 255, 255, 0.8);
+        @include mobile {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 122%;
+            text-align: center;
+
+        }
+    }
+}
+.preF1 {
+    margin-right: 150rem;
+    @include mobile {
+       flex-direction: column;
+       align-self: flex-start;
+       padding-left: 10px;
+    }
+    a {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 200%;
+        color: rgba(255, 255, 255, 0.8);
+
+
+    }
+    .zone {
+        font-family: var(--second-family);
+            font-weight: 500;
+            font-size: 20px;
+            color: #fff;
+
+            display: flex;
+            gap: 5px;
+            margin-bottom: 10rem;
+    }
+}
+.preF2 {
+    margin-right: 42rem;
+}
+.preF3 {
+    margin-right: 97rem;
+}
+.preF4 {
+    margin-right: 98rem;
+}
+
+.map, .phone, .message {
+    position: relative;
+    margin-left: 31px;
+    margin-bottom: 10rem;
+
+}
+.map::before {
+    content: url('img/location.svg');
+    position: absolute;
+    left: -31px;
+
+}
+.phone::before {
+    content: url('img/phone.svg');
+    position: absolute;
+    left: -31px;
+}
+.message::before {
+    content: url('img/message.svg');
+    position: absolute;
+    left: -31px;
+}
+
+.preFooter__block-socials {
+    @include tablet-small {
+        display: none;
+    }
+}

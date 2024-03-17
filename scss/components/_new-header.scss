@@ -1,0 +1,32 @@
+.new-header {
+    display: flex;
+    justify-content: space-between;
+}
+.new-header {
+    margin-top: 40px;
+
+		&__nav {
+            display: flex;
+            align-items: flex-end;
+            gap: 60rem;
+		}
+
+		&__nav-links {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 14px;
+            color: #f9fafb; 
+            border-radius: 5px;
+            @include mobile {
+                display: none;
+            }
+		}
+}
+.actual-link {
+    background: linear-gradient(91deg, #2563eb 0%, #d946ef 100%);
+    border-radius: 5px;
+    padding: 12px 24px;
+    display: flex;
+    text-align: end;
+
+}
