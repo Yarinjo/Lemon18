@@ -36,6 +36,9 @@
             font-size: 14px;
             color: #f9fafb; 
             border-radius: 5px;
+            &:hover {
+                transform: scale(1.2);
+            }
 
 		}
 }

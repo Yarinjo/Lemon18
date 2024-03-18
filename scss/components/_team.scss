@@ -33,6 +33,7 @@
     }
 
     &__devs-block {
+        position: relative;
         box-shadow: 0 22px 18px 0 rgba(0, 0, 0, 0.05);
         background: linear-gradient(268deg, rgba(254, 254, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
         border-radius: 34px;
@@ -66,4 +67,18 @@
     &__devs-socials {
         margin-top: 11rem;
     }
+}
+
+.team__devs-window {
+    position: absolute;
+    top: -50px;
+    left: 35%;
+    font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.03em;
+        color: #fff;
+        background: plum;
+        transition: 0.5s all ease-in-out;
+        opacity: 0;
 }

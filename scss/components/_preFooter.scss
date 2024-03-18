@@ -18,11 +18,12 @@ justify-content: center;
             flex-direction: row;
             margin-inline: auto;
             border-bottom: 1px solid aqua;
-        }
-        @include mobile {
             gap: 10px;
             width: 100%;
             justify-content: center;
+        }
+        @include mobile {
+
         }
     }
 

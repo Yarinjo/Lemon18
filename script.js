@@ -9,10 +9,24 @@ document.addEventListener("DOMContentLoaded", function () {
 const serviceBlock = document.querySelector('.service__blocks-block');
 console.log(serviceBlock);
 function addColorAnimation () {
-	serviceBlock.classList.toggle('color-change-2x-background')
+	serviceBlock.classList.toggle('color-change-2x-background');
+	console.log(serviceBlock);
 };
-serviceBlock.addEventListener('mouseover', addColorAnimation)
+serviceBlock.addEventListener('mouseover', addColorAnimation);
+serviceBlock.addEventListener('mouseout', addColorAnimation);
 
+const links = document.querySelector('.new-header__nav-links');
+function addAnimationToLinks() {
+	links.classList.toggle('color-change-2x-background');
+	console.log(links);
+}
+links.addEventListener('mouseover', addAnimationToLinks);
+links.addEventListener('mouseout', addAnimationToLinks);
+
+const teamWindow = document.querySelector('.team__devs-window');
+function windowEnter () {
+	
+}
 
 
 
@@ -30,6 +44,7 @@ function navToggle() {
   
   const myBurger = document.getElementById('header__navID');
   console.log(myBurger)
+
   
   const menu = document.querySelector('.menu')
   document.addEventListener('click', (e) => {
