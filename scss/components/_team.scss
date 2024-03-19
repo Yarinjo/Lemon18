@@ -71,14 +71,22 @@
 
 .team__devs-window {
     position: absolute;
-    top: -50px;
+    top: -40px;
     left: 35%;
     font-family: var(--font-family);
         font-weight: 400;
-        font-size: 16px;
+        font-size: 18px;
         letter-spacing: 0.03em;
         color: #fff;
-        background: plum;
         transition: 0.5s all ease-in-out;
         opacity: 0;
+        width: 200px;
+        background-color: rgba(0, 255, 255, 0.3);
+        border-radius: 75%;
+        padding: 15px;
+}
+
+.focus-in-contract {
+	-webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }

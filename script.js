@@ -24,9 +24,23 @@ links.addEventListener('mouseover', addAnimationToLinks);
 links.addEventListener('mouseout', addAnimationToLinks);
 
 const teamWindow = document.querySelector('.team__devs-window');
+console.log(teamWindow);
 function windowEnter () {
-	
+	//teamWindow.style.color = 'red';
+	teamWindow.style.opacity = '1';
+	teamWindow.classList.toggle('focus-in-contract');
 }
+function windowOut () {
+	//teamWindow.style.color = 'red';
+	//teamWindow.style.background = 'none';
+	teamWindow.style.opacity = '0';
+}
+
+
+const teamBlock = document.querySelector('.team__devs-block');
+teamBlock.addEventListener('mouseover', windowEnter);
+teamBlock.addEventListener('mouseout', windowOut);
+
 
 
 
