@@ -34,6 +34,7 @@ function windowOut () {
 	//teamWindow.style.color = 'red';
 	//teamWindow.style.background = 'none';
 	teamWindow.style.opacity = '0';
+	teamWindow.classList.toggle('focus-in-contract');
 }
 
 
